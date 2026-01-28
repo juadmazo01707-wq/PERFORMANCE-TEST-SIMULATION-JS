@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.card-body {
+    position: relative;
+}
+
+/* Input Styles */
+.input-group-text {
+    background-color: transparent;
+    border-right: none;
+}
+
+/* Button Styles */
+.btn-success {
+    background: linear-gradient(135deg, #09ff00ac 0%, #1fff0186 100%);
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0) !important;
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(50, 252, 0);
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Logo image */
+.logo-image {
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
+/* Link Styles */
+a {
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom styling for form inputs to match the image */
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #dee2e6;
+    padding: 0.6rem 0.75rem;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Label styling */
+.form-label {
+    color: #000000;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    margin-top: 2rem;
+}

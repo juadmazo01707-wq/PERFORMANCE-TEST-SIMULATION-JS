@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "fullname": "Super Admin",
+      "email": "admin@gmail.com",
+      "pass": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "fullname": "Standard User",
+      "email": "user@gmail.com",
+      "pass": "user",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "fullname": "Juan Mazo",
+      "email": "juan@gmail.com",
+      "pass": "juan",
+      "role": "user"
+    },
+    {
+      "id": "4",
+      "fullname": "VP",
+      "email": "vp@gmail.com",
+      "pass": "1234",
+      "role": "user"
+    }
+  ],
+  "products": []
+}
