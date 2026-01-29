@@ -48,9 +48,9 @@
                     <h2 id="todayRevenue"> <i class="bi bi-currency-dollar"> </i> 3,450 </h2>
                 </div>
             </div>
-            <div class="dashboard-content"> <!-- Main Content -->
+            <div class="dashboard-content col-12 d-flex"> <!-- Main Content -->
                 <!-- Orders Table Section -->
-                <div class="orders-section">
+                <div class="orders-section col-7">
                     <div class="section-header">
                         <h2> Recent Orders </h2>
                         <div class="controls-row justify-content-end">
@@ -77,7 +77,8 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="pagination">
+                </div>
+                <div class="pagination">
                         <button class="page-btn" onclick="changePage(-1)"> <i class="bi bi-chevron-left"> </i> </button>
                         <button class="page-btn active" data-page="1"> 1 </button>
                         <button class="page-btn" data-page="2"> 2 </button>
@@ -85,8 +86,9 @@
                         <span> ... </span>
                         <button class="page-btn" data-page="12"> 12 </button>
                         <button class="page-btn" onclick="changePage(1)"> <i class="bi bi-chevron-right"> </i> </button>
-                    </div>
                 </div>
+            </div>
+            <div class="col-5">
                 <!-- Order Details Panel -->
                 <div class="order-details-panel" id="orderDetailsPanel">
                     <div class="order-details-header">
@@ -94,41 +96,42 @@
                         <div class="order-id-row">
                             <span class="order-id" id="detailOrderId"> #1024 </span>
                             <span class="badge badge-preparing" id="detailOrderStatus"> Preparing </span>
+                    </div>
+                </div>
+                <div class="customer-section">
+                    <div class="customer-info">
+                        <div class="customer-avatar"> <i class="bi bi-person-fill"> </i> </div>
+                        <div class="customer-details">
+                            <h4> Customer </h4>
+                            <div class="customer-name" id="detailCustomerName"> Alice Smith </div>
+                            <div class="customer-contact" id="detailCustomerEmail"> alice.smith@example.com </div>
+                            <div class="customer-contact" id="detailCustomerPhone"> +1 (555) 123-4567 </div>
                         </div>
                     </div>
-                    <div class="customer-section">
-                        <div class="customer-info">
-                            <div class="customer-avatar"> <i class="bi bi-person-fill"> </i> </div>
-                            <div class="customer-details">
-                                <h4> Customer </h4>
-                                <div class="customer-name" id="detailCustomerName"> Alice Smith </div>
-                                <div class="customer-contact" id="detailCustomerEmail"> alice.smith@example.com </div>
-                                <div class="customer-contact" id="detailCustomerPhone"> +1 (555) 123-4567 </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="items-section">
+                    <h4> Items </h4>
+                    <div id="orderItemsList">
+                        <!-- Items will be dynamically inserted here -->
                     </div>
-                    <div class="items-section">
-                        <h4> Items </h4>
-                        <div id="orderItemsList">
-                            <!-- Items will be dynamically inserted here -->
-                        </div>
+                </div>
+                <div class="totals-section">
+                    <div class="total-row">
+                        <span> Subtotal </span>
+                        <span id="detailSubtotal">$45.00</span>
                     </div>
-                    <div class="totals-section">
-                        <div class="total-row">
-                            <span> Subtotal </span>
-                            <span id="detailSubtotal">$45.00</span>
-                        </div>
-                        <div class="total-row">
-                            <span> Tax (8%) </span>
-                            <span id="detailTax"> $3.60 </span>
-                        </div>
-                        <div class="total-row final">
-                            <span> Total </span>
-                            <span id="detailTotal"> $48.60 </span>
-                        </div>
+                    <div class="total-row">
+                        <span> Tax (8%) </span>
+                        <span id="detailTax"> $3.60 </span>
                     </div>
-                    <div class="update-status-section">
-                        <h4> UPDATE STATUS </h4>
+                    <div class="total-row final">
+                        <span> Total </span>
+                        <span id="detailTotal"> $48.60 </span>
+                    </div>
+                </div>
+                <div class="update-status-section">
+                    <h4> UPDATE STATUS </h4>
+                    <div class="update-status-section-btns">
                         <select class="status-select" id="statusSelect">
                             <option value="Preparing"> Preparing </option>
                             <option value="Pending"> Pending </option>
