@@ -86,3 +86,68 @@ a:hover {
 .footer {
     margin-top: 2rem;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .card {
+        margin: 0;
+        border-radius: 0;
+        min-height: 100vh;
+    }
+
+    .card-body {
+        padding: 2rem 1.5rem;
+    }
+
+    .logo-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn-success {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+
+    .form-control, .form-select {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 1.5rem 1rem;
+    }
+
+    .logo-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-control, .form-select {
+        padding: 0.6rem;
+    }
+
+    .btn-success {
+        padding: 0.6rem;
+    }
+}

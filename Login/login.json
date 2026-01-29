@@ -27,6 +27,13 @@
       "email": "vp@gmail.com",
       "pass": "1234",
       "role": "user"
+    },
+    {
+      "id": "5",
+      "fullname": "Juan",
+      "email": "juan1@gmail.com",
+      "pass": "juan",
+      "role": "user"
     }
   ],
   "products": []
